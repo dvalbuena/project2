@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include partials/head.ejs %>
+</head>
+<body class="login">
+    <% include partials/topnav.ejs %>
+
+    <div class="main container">
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <% if(typeof error !== 'undefined') { %>
+                    <p class="alert alert-warning">
+                        <%= error %>
+                    </p>
+                <% } %>
+                
+                <form class="form-horizontal well well-lg" method="post" action="/login" >
+                    <input type="hidden" name="_csrf" value=csrfToken>
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                                <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group center">
+                            <input type="submit" class="btn btn-primary" value="Login">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/footer.ejs %>
+</body>
+</html>

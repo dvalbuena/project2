@@ -1,0 +1,43 @@
+{
+	"users": [{
+		"firstName": "Pete",
+		"lastName": "Chern",
+		"email": "pete@email.com",
+		"password": "test",
+		"wins": 120,
+		"loses": 0,
+		"draws": 0
+		},{
+		"firstName": "Denice",
+		"lastName": "Valbuena",
+		"email": "denice@email.com",
+		"password": "test",
+		"wins": 0,
+		"loses": 120,
+		"draws": 0
+		},{
+		"firstName": "Burna",
+		"lastName": "De Almeida Cruz",
+		"email": "burna@csu.fullerton.edu",
+		"password": "test",
+		"wins": 0,
+		"loses": 0,
+		"draws": 0
+		},{
+		"firstName": "Akhil",
+		"lastName": "Angad Choudhari",
+		"email": "akhil@email.com",
+		"password": "test",
+		"wins": 0,
+		"loses": 0,
+		"draws": 0
+		},{
+		"firstName": "Kartikeya",
+		"lastName": "Gupta",
+		"email": "kartikeya@email.com",
+		"password": "test",
+		"wins": 0,
+		"loses": 0,
+		"draws": 0
+	}]
+}

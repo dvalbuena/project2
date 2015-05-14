@@ -1,0 +1,19 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">Connect4</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav navbar-right">
+          <% if(typeof user !== 'undefined') { %>
+            <li><a>Welcome <%= user.firstName %> <%= user.lastName %></a></li>
+            <li><a href="/logout" >Logout</a></li>
+          <% } else { %>
+            <!--li><a href="/signup" >Sign Up!</a></li-->
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login" >Login</a></li>
+          <% } %>
+        </ul>
+    </div>
+  </div>
+</div>

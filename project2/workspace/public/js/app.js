@@ -63,6 +63,23 @@ socket.on('winner', function(turn) {
   
 });
 
+socket.on('Draw', function(turn) {
+  isOver = true;
+  blockClick();
+  console.log("Tie");
+  $("body .message p").text("Tie Game.");
+  $("body .message").append($("<button>").text("click here to play again."));
+  
+  $("body .message button").click(function () {
+    console.log("listener of button");
+    $("body .message p").text(" ");
+    $("body .message button").remove();
+    socket.emit("newGame");
+
+    });
+  
+});
+
 socket.on('gameOver', function() {
     isOver = true;
     blockClick();

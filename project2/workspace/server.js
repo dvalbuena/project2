@@ -333,10 +333,10 @@ var clearGrid = function () {
     height = [5, 5, 5, 5, 5, 5, 5];
 };
 
-var server = http.listen(3000, function() {
-    console.log('Cloud9');
-});
-/*
+/* var server = http.listen(3000, function() {
+    console.log('locahost:3000');
+}); */
+
 var server = http.listen(process.env.PORT, process.env.IP, function() {
 	console.log('Cloud9');
-});*/
+});
